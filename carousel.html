@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carousel Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./dist/carousel.css" />
+
+    <script src="./src/js/carousel.js"></script>
+</head>
+
+<body>
+
+    <!-- Carousel -->
+    <div class="hh-crsl">
+
+        <button class="hh-crsl-next-btn" onclick="slideIt(1)">
+            <svg height="24" width="24">
+                <line x1="0" y1="0" x2="13" y2="13" />
+                <line x1="12" y1="12" x2="0" y2="24" />
+            </svg>
+        </button>
+        <button class="hh-crsl-prev-btn" onclick="slideIt(2)">
+            <svg height="24" width="24">
+                <line x1="24" y1="0" x2="12" y2="12" />
+                <line x1="12" y1="12" x2="24" y2="24" />
+            </svg>
+        </button>
+
+        <div class="hh-crsl-slide hh-slide-1 slideLeft">
+            <div class="hh-crsl-slide-cptn">
+                <p>Slide no.1 heading</p><br>
+                <p>Lorem Ipsum first is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <div class="hh-crsl-slide hh-slide-2">
+            <div class="hh-crsl-slide-cptn">
+                <p>Slide no.2 heading</p><br>
+                <p>Lorem Ipsum second is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <div class="hh-crsl-slide hh-slide-3">
+            <div class="hh-crsl-slide-cptn">
+                <p>Slide no.3 heading</p><br>
+                <p>Lorem Ipsum third is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <div class="hh-crsl-slide hh-slide-4">
+            <div class="hh-crsl-slide-cptn">
+                <p>Slide no.4 heading</p><br>
+                <p>Lorem Ipsum forth is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <div class="hh-crsl-slide hh-slide-5 slideLeftOut">
+            <div class="hh-crsl-slide-cptn">
+                <p>Slide no.5 heading</p><br>
+                <p>Lorem Ipsum fifth is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of Carousel -->
+
+</body>
+
+</html>

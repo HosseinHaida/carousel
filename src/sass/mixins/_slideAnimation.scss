@@ -1,0 +1,23 @@
+@mixin slideAnimation($name, $duration, $timingFunction, $zIndex) {
+    width: 100%;
+    z-index: $zIndex;
+    animation: $name $duration $timingFunction;
+    -webkit-animation: $name $duration $timingFunction;
+    -moz-animation: $name $duration $timingFunction;
+	visibility: visible !important;
+}
+
+@mixin slideAnimKeyFrames($animationName, $zeroPercTranslate, $hundredPercTranslate) {
+    @keyframes #{$animationName} {
+        0% { transform: translateX($zeroPercTranslate) }
+        100% { transform: translateX($hundredPercTranslate) }
+    }
+    @-webkit-keyframes #{$animationName} {
+        0% { -webkit-transform: translateX($zeroPercTranslate) }
+        100% { -webkit-transform: translateX($hundredPercTranslate) }
+    }
+    @-moz-keyframes #{$animationName} {
+        0% { -webkit-transform: translateX($zeroPercTranslate) }
+        100% { -webkit-transform: translateX($hundredPercTranslate) }
+    }
+}
